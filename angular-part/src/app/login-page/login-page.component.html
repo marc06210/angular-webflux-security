@@ -1,0 +1,18 @@
+<div class='docs-header-section'>
+	<h1>Log in!</h1>
+</div>
+<div *ngIf="errorS">
+    <font color="red">{{errorS}}</font>
+</div>
+<div class='center'>
+	<form class="example-form" role="form" (submit)="login()">
+		<mat-form-field class="example-full-width">
+			<input matInput placeholder="What is your name?" [(ngModel)]="credentials.username" name="username">
+		</mat-form-field>
+
+		<mat-form-field class="example-full-width">
+			<input type='password' matInput placeholder="Enter your password" [(ngModel)]="credentials.password" name="password">
+		</mat-form-field>
+		<button mat-raised-button color="primary" type="submit">Connect</button>
+	</form>
+</div>

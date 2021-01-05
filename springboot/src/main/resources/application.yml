@@ -1,3 +1,10 @@
 spring:
   webflux:
     base-path: /api
+
+logging:
+  level:
+    root: info
+    com.mgu.piphotomgr: DEBUG
+    org.springframework.web: TRACE
+    org.springframework.security: DEBUG
